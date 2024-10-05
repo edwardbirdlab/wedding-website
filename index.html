@@ -75,9 +75,9 @@
                         <ul class="primary-nav">
                             <!-- <li><a href="#intro">How we met</a></li> -->
                             <li><a href="#events">Events</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-lg">Slide Show</a></li>
                             <li class="hidden-sm hidden-xs"><a href="#video-bg">Venue</a></li>
                             <li><a href="#registry">Registry</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#video-lg">Slide Show</a></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
@@ -209,12 +209,6 @@
 
 </section>
 
-<section id="video-lg" class="hidden-xs">
-    <div id="bgndVideo1" class="player"
-         data-property="{videoURL:'https://www.youtube.com/watch?v=OKXlulA0w7w',containment:'#video-lg',autoPlay:true, mute:true, showControls:false, startAt:148, stopAt:510, opacity:1}">
-    </div>
-</section>
-
 <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
          data-property="{videoURL:'https://www.youtube.com/watch?v=UBeJt6o-sX0',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:36, stopAt:140, opacity:1}">
@@ -227,13 +221,37 @@
 </section>
 
 <section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>About the venue</h3>
-        <h4>The jewel of the Gardens is the Ed Lycan Conservatory, a glass-enclosed Lord & Burnham greenhouse inspired by 19th-century Victorian architecture. The greenhouse was first installed inside Douglass Park near NE 10th and Eastern Avenue in 1924, on what were the grounds of the original State Fair park. It was moved to the Will Rogers Gardens in 1936, and later named after Ed Lycan, the Parks Department's first employee.</h4>
-        <h4>For many years, the Conservatory served as a popular venue for flower shows and gardening exhibitions. A 2013 renovation project revitalized the historic structure, and the Conservatory now houses one of the state's largest permanent collections of cactii and succulents.</h4>
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <h4>Located off of I-44 and NW 36th Street, the Ed Lycan Conservatory is in the northeast corner of the Will Rogers Gardens next to the Will Rogers Gardens Exhibition Center. Guests may park anywhere in the park, though we recommend parking in either the lot off of NW 36th Street and N Grand Boulevard (especially for handicap access), or the lot off of N Grand Boulevard and Pat Murphy Drive. If you experience trouble finding the gardens or conservatory, call Victoria or Edward.</h4>
+    <div class="row">
+        <!-- First row with two headings -->
+        <div class="col-md-1 text-center"></div>
+        <div class="col-md-4 text-center">
+            <h3>About the venue</h3>
+        </div>
+        <div class="col-md-2 text-center"></div>
+        <div class="col-md-4 text-center">
+            <h3>How do I get there?</h3>
+        </div>
+        <div class="col-md-1 text-center"></div>
+    </div>
+
+    <div class="row section-padding">
+        <!-- Second row with detailed content -->
+        <div class="col-md-1 text-center"></div>
+        <div class="col-md-4 text-justify">
+            <p3 style="color: #555; font-weight: normal; font-size: 16px;">
+                The jewel of the Gardens is the Ed Lycan Conservatory, a glass-enclosed Lord & Burnham greenhouse inspired by 19th-century Victorian architecture. The greenhouse was first installed inside Douglass Park near NE 10th and Eastern Avenue in 1924, on what were the grounds of the original State Fair park. It was moved to the Will Rogers Gardens in 1936, and later named after Ed Lycan, the Parks Department's first employee. <br> <br>
+            </p3>
+            <p3 style="color: #555; font-weight: normal; font-size: 16px;">
+                For many years, the Conservatory served as a popular venue for flower shows and gardening exhibitions. A 2013 renovation project revitalized the historic structure, and the Conservatory now houses one of the state's largest permanent collections of cactii and succulents.
+            </p3>
+        </div>
+        <div class="col-md-2 text-center"></div>
+        <div class="col-md-4 text-justify">
+            <p3 style="color: #555; font-weight: normal; font-size: 16px;">
+                Located off of I-44 and NW 36th Street, the Ed Lycan Conservatory is in the northeast corner of the Will Rogers Gardens next to the Will Rogers Gardens Exhibition Center. Guests may park anywhere in the park, though we recommend parking in either the lot off of NW 36th Street and N Grand Boulevard (especially for handicap access), or the lot off of N Grand Boulevard and Pat Murphy Drive. If you experience trouble finding the gardens or conservatory, call Victoria or Edward.
+            </p3>
+        </div>
+        <div class="col-md-1 text-center"></div>
     </div>
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
@@ -259,11 +277,6 @@
                     </div>
                     
                     <div class="row text-center">
-                        <!-- <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div> -->
                         <div class="col-md-12" style="padding: 5px;">
                             <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
                                 map</a>
@@ -280,22 +293,34 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2>A gift for us or for others</h2>
-                <h4>We've been blessed in our years together and only wish to have you join us in December. However, if you feel inclined, here are a few gift options.
-                </h4>
             </div>
         </div>
         <div class="row">
+            <div class="col-md-3 text-center"></div>
             <div class="col-md-6 text-center">
-                <h3>Gift Registry</h3>
+                <p3 style="color: #555; font-weight: normal; font-size: 20px;">We've been blessed in our years together and only wish to have you join us in December. However, if you feel inclined, here are a few gift options.
+                </p3>
+            </div>
+            <div class="col-md-3 text-center"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h3>Gift Registry <br> <br></h3>
                 <button class="btn btn-fill rsvp-btn" onclick="window.location.href='https://www.amazon.com/wedding/share/victoria-edward'">Give a Gift</button>
             </div>
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <h3>Cullen Pickens Memorial Field Camp Scholarship</h3>
+                    <h3>Cullen Pickens Memorial Field<br> Camp Scholarship</h3>
                     <button class="btn btn-fill rsvp-btn" onclick="window.location.href='https://secure.osugiving.com/s/giving/annual?dsgt=22-32810'">Give a Donation</button>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="video-lg" class="hidden-xs">
+    <div id="bgndVideo1" class="player"
+         data-property="{videoURL:'https://www.youtube.com/watch?v=OKXlulA0w7w',containment:'#video-lg',autoPlay:true, mute:true, showControls:false, startAt:148, stopAt:510, opacity:1}">
     </div>
 </section>
 
