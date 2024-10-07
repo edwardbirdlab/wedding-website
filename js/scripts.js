@@ -303,7 +303,7 @@ function initMap() {
 
     // Add event listeners to open info windows when the markers are clicked
     marker2.addListener('click', function() {
-        infoWindow2.open(map, marker1);
+        infoWindow2.open(map, marker2);
     });
 
     // Create info windows for each marker
@@ -313,7 +313,7 @@ function initMap() {
 
     // Add event listeners to open info windows when the markers are clicked
     marker3.addListener('click', function() {
-        infoWindow3.open(map, marker1);
+        infoWindow3.open(map, marker3);
     });
 
 }
