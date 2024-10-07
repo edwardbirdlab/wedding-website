@@ -258,10 +258,15 @@ function initMap() {
         scrollwheel: false
     });
 
+    // Custom markers: using different colored marker URLs
+    var markerIconRed = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+    var markerIconBlue = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png";
+
     // Add first marker (Ceremony)
     var marker1 = new google.maps.Marker({
         position: location1,
         map: map,
+        icon: markerIconRed,
         title: "Ceremony"
     });
 
@@ -269,6 +274,7 @@ function initMap() {
     var marker2 = new google.maps.Marker({
         position: location2,
         map: map,
+        icon: markerIconBlue,
         title: "Parking (Large Lot)"
     });
 
@@ -276,8 +282,20 @@ function initMap() {
     var marker3 = new google.maps.Marker({
         position: location3,
         map: map,
+        icon: markerIconBlue,
         title: "Parking (Small Lot)"
     });
+
+    // Create info windows for each marker
+    var infoWindow1 = new google.maps.InfoWindow({
+        content: "<h3>Ceremony</h3>"
+    });
+
+    // Add event listeners to open info windows when the markers are clicked
+    marker1.addListener('click', function() {
+        infoWindow1.open(map, marker1);
+    });
+
 }
 
 // alert_markup
