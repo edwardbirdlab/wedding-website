@@ -253,7 +253,7 @@ function initMap() {
     
     // Initialize the map centered on the first location
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15, // Set a zoom level that shows both markers
+        zoom: 17, // Set a zoom level that shows both markers
         center: location1,
         scrollwheel: false
     });
