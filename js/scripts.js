@@ -240,32 +240,33 @@ $(document).ready(function () {
 
 /********************** Extras **********************/
 
-// Google map
+// Google map initialization
 function initMap() {
-    var location = {lat: 35.50634008593504, lng: -97.57760799466227};
+    // First location: Ceremony 35.50654233511649, -97.57736317386663
+    var location1 = { lat: 35.50654233511649, lng: -97.57736317386663 };
+    
+    // Second location: Parking 35.505873220933566, -97.57746083182285
+    var location2 = { lat: 35.505873220933566, lng: -97.57746083182285 };
+    
+    // Initialize the map centered on the first location
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: location,
+        zoom: 3, // Set a zoom level that shows both markers
+        center: location1,
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
-}
-
-function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
+    // Add first marker (Ceremony)
+    var marker1 = new google.maps.Marker({
+        position: location1,
+        map: map,
+        title: "Location 1: Ceremony"
     });
 
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
+    // Add second marker (Parking)
+    var marker2 = new google.maps.Marker({
+        position: location2,
+        map: map,
+        title: "Location 2: Parking"
     });
 }
 
