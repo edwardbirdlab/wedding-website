@@ -245,8 +245,11 @@ function initMap() {
     // First location: Ceremony 35.50654233511649, -97.57736317386663
     var location1 = { lat: 35.50654233511649, lng: -97.57736317386663 };
     
-    // Second location: Parking 35.505873220933566, -97.57746083182285
+    // Second location: Parking Large 35.505873220933566, -97.57746083182285
     var location2 = { lat: 35.505873220933566, lng: -97.57746083182285 };
+
+    // Third location: Parking Small 35.50723154427265, -97.57703107298232
+    var location3 = { lat: 35.50723154427265, lng: -97.57703107298232 };
     
     // Initialize the map centered on the first location
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -259,14 +262,21 @@ function initMap() {
     var marker1 = new google.maps.Marker({
         position: location1,
         map: map,
-        title: "Location 1: Ceremony"
+        title: "Ceremony"
     });
 
     // Add second marker (Parking)
     var marker2 = new google.maps.Marker({
         position: location2,
         map: map,
-        title: "Location 2: Parking"
+        title: "Parking (Large Lot)"
+    });
+
+    // Add third marker (Parking)
+    var marker3 = new google.maps.Marker({
+        position: location3,
+        map: map,
+        title: "Parking (Small Lot)"
     });
 }
 
