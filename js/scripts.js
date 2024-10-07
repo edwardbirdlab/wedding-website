@@ -296,6 +296,26 @@ function initMap() {
         infoWindow1.open(map, marker1);
     });
 
+    // Create info windows for each marker
+    var infoWindow2 = new google.maps.InfoWindow({
+        content: "<h3>Main Parking Lot</h3><p>If this lot is full try the other lot.</p>"
+    });
+
+    // Add event listeners to open info windows when the markers are clicked
+    marker2.addListener('click', function() {
+        infoWindow2.open(map, marker1);
+    });
+
+    // Create info windows for each marker
+    var infoWindow3 = new google.maps.InfoWindow({
+        content: "<h3>Second Parking Lot</h3><p>This lot is slightly farther away.</p>"
+    });
+
+    // Add event listeners to open info windows when the markers are clicked
+    marker3.addListener('click', function() {
+        infoWindow3.open(map, marker1);
+    });
+
 }
 
 // alert_markup
