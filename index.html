@@ -190,23 +190,11 @@
 </section>
 
 <section id="map">
-    <div class="row">
+    <div class="row section-padding">
         <!-- First row with two headings -->
         <div class="col-md-1 text-center"></div>
-        <div class="col-md-4 text-center">
-            <h3>About the venue</h3>
-        </div>
-        <div class="col-md-2 text-center"></div>
-        <div class="col-md-4 text-center">
-            <h3>How do I get there?</h3>
-        </div>
-        <div class="col-md-1 text-center"></div>
-    </div>
-
-    <div class="row section-padding">
-        <!-- Second row with detailed content -->
-        <div class="col-md-1 text-center"></div>
         <div class="col-md-4 text-justify" style="padding-left: 20px; padding-right: 20px;">
+            <h3>About the venue</h3> <br>
             <p3 style="color: #555; font-weight: normal; font-size: 16px;">
                 The jewel of the Gardens is the Ed Lycan Conservatory, a glass-enclosed Lord & Burnham greenhouse inspired by 19th-century Victorian architecture. The greenhouse was first installed inside Douglass Park near NE 10th and Eastern Avenue in 1924, on what were the grounds of the original State Fair park. It was moved to the Will Rogers Gardens in 1936, and later named after Ed Lycan, the Parks Department's first employee. <br> <br>
             </p3>
@@ -216,6 +204,7 @@
         </div>
         <div class="col-md-2 text-center"></div>
         <div class="col-md-4 text-justify" style="padding-left: 20px; padding-right: 20px;">
+            <h3>How do I get there?</h3> <br>
             <p3 style="color: #555; font-weight: normal; font-size: 16px;">
                 Located off of I-44 and NW 36th Street, the Ed Lycan Conservatory is in the northeast corner of the Will Rogers Gardens next to the Will Rogers Gardens Exhibition Center. Guests may park anywhere in the park, though we recommend parking in either the lot off of NW 36th Street and N Grand Boulevard (especially for handicap access), or the lot off of N Grand Boulevard and Pat Murphy Drive. If you experience trouble finding the gardens or conservatory, call Victoria or Edward.
             </p3>
@@ -324,7 +313,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3><br>Fill out the Form Below to RSVP</h3>
-                <p3 style="color: #555; font-weight: normal; font-size: 16px;">If able, please submit RSVPs before November 17<sup>th</sup><br><br></p3>
+                <p3 style="color: #555; font-weight: normal; font-size: 16px;">If able, please submit RSVPs before November 24<sup>th</sup>.<br><br></p3>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
@@ -332,14 +321,14 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
+                                                                     placeholder="Email Address**"
                                                                      required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
+                                                                 placeholder="Name**"
                                                                  required>
                             </div>
                         </div>
@@ -349,7 +338,7 @@
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
                                                                   max="4"
-                                                                  placeholder="# Additional Guests"
+                                                                  placeholder="# Guests Attending**"
                                                                   required>
                             </div>
                         </div>
@@ -357,7 +346,7 @@
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
-                                                                placeholder="Invite code"
+                                                                placeholder="Invite Code**"
                                                                 required>
                             </div>
                         </div>
@@ -365,14 +354,14 @@
                             <div class="form-input-group"  style="display: flex; align-items: center;">
                                 <img src="img/food.png" alt="User Icon" style="width: 20px; height: 20px; margin-left: 10px;">
                                 <input name="food_allergies" class=""
-                                                                 placeholder="List any dietary restrictions">
+                                                                 placeholder="Dietary Restrictions?">
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12">
                             <div class="form-input-group"  style="display: flex; align-items: center;">
                                 <img src="img/geology.png" alt="User Icon" style="width: 20px; height: 20px; margin-left: 10px;">
                                 <input name="donation" class=""
-                                                                 placeholder="Donation to Field Camp Scholarship (Yes/No)">
+                                                                 placeholder="Donated to Scholarship?">
                             </div>
                         </div>
                     </div>
@@ -380,7 +369,9 @@
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <p3 style="color: #555; font-weight: normal; font-size: 14px;">Email, Name, Guests, and Code fields must be filled to submit form.<br></p3>
+                    <p3 style="color: #555; font-weight: normal; font-size: 14px;">**Fields that must be filled to submit form.<br></p3>
+                    </div>
+                    <p3 style="color: #555; font-weight: normal; font-size: 14px;">Please indicate in your RSVP if you donated to the Field Camp Scholarship so we may send you our thanks.<br></p3>
                     <button class="btn-fill rsvp-btn">
                         RSVP Now!
                     </button>
